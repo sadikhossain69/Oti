@@ -6,7 +6,7 @@
     width: 100%;
     position: relative;
     z-index: -1;
-    background-image: url('../../../assets/image/banner1.jpeg');
+    /* background-image: url('../../../assets/image/banner1.jpeg'); */
 }
 #banner_part2{
    padding:130px 0 250px 0;
