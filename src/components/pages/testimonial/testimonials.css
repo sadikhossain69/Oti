@@ -1,0 +1,166 @@
+#abdur_part {
+    margin: 100px 0 0 0;
+    background:#E5EEF2;
+    padding:70px 0;
+}
+.abdur_left{
+    margin-left: 40px;
+}
+.abdur_left img{
+    width: 100%;
+}
+.abdur_right {
+    margin: 45px 0 0 100px;
+}
+.mars_left{
+    margin-left: 10%;
+}
+.abdur_right h5{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.abdur_right h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+.abdur_right p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(41, 46, 49, 0.76);
+    width: 85%;
+    margin-bottom: 25px;
+}
+.start_icon i{
+    margin-right: 3px;
+    color: var(--primary-color);
+}
+/* abdur rajjak css  */
+.start_icon i{
+    margin-right: 3px;
+    color: var(--primary-color);
+}
+
+.mars_left {
+	margin-left: 10%;
+	background-color: var(--tartiary-color);
+	padding: 20px;
+	border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.abdur_left img {
+	width: 100%;
+	border-radius: 50px;
+}
+
+div.swiper-pagination{
+    padding-top: 2rem;
+    position: relative;
+}
+
+
+.swiper-pagination-bullet{
+ background-color: var(--primary-color)!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--primary-color)!important;
+}
+
+@media(min-width:992px) and (max-width:1199.98px){
+   #abdur_part {
+        margin: 100px 0 0 0;
+    }
+    .abdur_right p {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abdur_right h6 {
+        margin-bottom: 18px;
+    }
+    .abdur_right {
+        margin: 46px 0 0 81px;
+    }
+    .abdur_right h5 {
+        margin-bottom: 5px;
+    } 
+}
+
+
+@media(min-width:768px) and (max-width:991.98px){
+   #abdur_part {
+        margin: 100px 0 0 0;
+    }
+    .mars_left{
+        margin-left: 0;
+    }
+    .abdur_right {
+        margin: 33px 0 0 20px;
+    }
+    .abdur_right h6 {
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
+    .abdur_right h5 {
+        line-height: 34px;
+        margin-bottom: 5px;
+    }
+    .abdur_right p {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .start_icon i {
+        font-size: 14px;
+    } 
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+#abdur_part {
+        margin: 100px 0 60px 0;
+    }
+    .mars_left{
+        margin-left: 0;
+    }
+    .abdur_left {
+        margin-left:0px;
+    }
+}
+@media(max-width:767.98px){
+    .abdur_right {
+        margin: 40px 20px 20px 20px;
+        text-align: center;
+    }
+    .abdur_right h5 {
+        margin-bottom: 4px;
+    }
+    .abdur_right h6 {
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .abdur_right p {
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+@media (max-width:575.98px){
+    #abdur_part {
+        margin: 100px 0 0 0;
+    }
+    .mars_left {
+        margin-left:0%;
+    }
+    .abdur_left {
+       margin:0 10px;
+    }
+}

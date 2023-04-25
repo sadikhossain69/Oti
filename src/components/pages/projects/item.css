@@ -1,0 +1,136 @@
+#Flat_part{
+    margin-bottom: 100px;
+}
+#Flat_part .row{
+    margin-left: 40px;
+}
+.flat_img img{
+    width: 100%;
+}
+.flat_content{
+    padding:30px;
+    background:var(--tartiary-color);
+}
+
+.flat_item{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin:20px;
+}
+.flat_content h5{
+    color:#292E31;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5px;
+}
+.flat_content h4{
+    font-size: 14px;
+}
+.see_more a{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+.content1 img{
+    margin-right: 20px;
+    
+    display: flex;
+    padding-top:5px;
+    width: 24px;
+}
+
+.flat_content img{
+    width: 16px;
+}
+.content1{
+    margin-top: 10px;
+    align-items: center;
+}
+.content1 p{
+    font-size:14px;
+    width: 40%;
+    color: rgba(41, 46, 49, 0.76);
+}
+.Three_beds img{
+margin-right: 20px;
+}
+.Three_beds{
+    margin-right: 35px;
+}
+.Three_beds p{
+    font-size: 14px;
+    color: rgba(41, 46, 49, 0.76);
+}
+.Three_baths img{
+    margin-right: 15px;
+}
+.Three_baths p{
+    font-size: 14px;
+    color: rgba(41, 46, 49, 0.76);
+}
+.content2{
+    margin: 10px 0;
+}
+.content3{
+    padding-bottom: 10px;
+}
+.content3 img{
+    margin-right: 15px;
+}
+.content3 p{
+    font-size: 14px;
+    margin-right: 34px;
+    color: rgba(41, 46, 49, 0.76);
+}
+.content4 p{
+    font-size: 14px;
+    margin-right: 34px;
+    color: rgba(41, 46, 49, 0.76);
+}
+
+
+@media(min-width:768px) and (max-width:991.98px){
+     #Flat_part {
+        margin-bottom: 70px;
+    }
+    #Flat_part .row {
+        margin-left:0px;
+    }
+    .mars_right {
+        margin-right:0;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+#Flat_part {
+        margin-bottom:30px;
+    }
+    #Flat_part .row {
+        margin-left:0px;
+    }
+    .flat_item {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:575.98px){
+     #Flat_part {
+	margin-bottom: 50px;
+}
+    #Flat_part .row {
+        margin-left:0px;
+    }
+    .flat_item {
+        border-radius: 10px;
+        margin-bottom: 40px;
+        margin-right: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+    .Three_beds {
+	margin-right: 22px;
+}
+}

@@ -1,0 +1,108 @@
+.contact_banner{
+    background: url(../../../assets/image/contact_img.png);
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 240px 0 286px 0;
+}
+.contact_inputs input{
+    width: 100%;
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 10px;
+
+}
+
+.contact_textarea textarea {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid var(--primary-color);
+	padding: 20px;
+	font-size: 16px;
+}
+.contact_inputs input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.contact_textarea textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.contact_textarea label{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+.contact_inputs label{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+.contact_textarea{
+    margin-top: 10px;
+    margin:10px 0 20px 0;
+}
+.contact_inputs a button {
+    background: var(--tarnary-color) !important;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    border: none;
+    
+}
+
+@media(min-width:992px) and (max-width:1199.98px){
+  #contact_part{
+        margin-top: 80px;
+    }
+    .contact_banner {
+        padding: 50px 20px;
+    } 
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+    #contact_part{
+        margin-top: 100px;
+    }
+    .contact_mars{
+        margin-left: 0;
+    }
+    .contact_banner {
+        padding: 50px;
+    }
+    .input_mars{
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width:767.98px){
+     #contact_part{
+        margin: 70px 0;
+    }
+    .contact_mars{
+        margin-left: 0;
+    }
+    .input_mars{
+        margin-left: 0;
+    }
+    .contact_banner {
+        padding: 40px;
+    }
+    .contact_inputs a button {
+        padding: 8px 25px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+}
+@media (max-width:575.98px){
+    
+}

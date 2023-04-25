@@ -1,0 +1,36 @@
+.section_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.section_subtitle{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.projects_list{
+    display: block;
+    justify-content: center;
+    
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+}
+.project_list-item{
+    color: var(--tartiary-color);
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s var(--transition) ;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.active-work{
+    color: var(--tartiary-color);
+    background: var(--primary-color);
+}

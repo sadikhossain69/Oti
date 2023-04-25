@@ -1,0 +1,254 @@
+#footer_part{
+    background:#90CCE5;
+    padding:100px 0 80px 0;
+    color:var(--primary-color);
+}
+
+.footer_one p{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    width:85%;
+}
+.footer_2 h6{
+    color: var(--primary-color);
+    font-size: 19px;
+    line-height: 19.08px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    margin-top: 2px;
+}
+.footer_four_item span {
+	color: var(--primary-color);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25.39px;
+	margin-left: 10px;
+}
+.footer_2{
+    padding-right: 57px;
+}
+.footer_2 ul li{
+    padding-bottom: 15px;
+}
+.footer_2 ul li a{
+    color: var(--tartiary-color);
+    font-weight: 400;
+    font-size: 14.84px;
+    line-height: 17.39px;
+}
+.footer_2s h6{
+    color: var(--primary-color);
+    padding-bottom: 30px;
+    font-size: 19px;
+    line-height: 19.08px;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.footer_2s ul li{
+    padding-bottom: 15px;
+}
+.footer_2s ul li a{
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 14.84px;
+    line-height: 17.39px;
+}
+.footer_four h6{
+    color: var(--primary-color);
+    font-size: 19px;
+    padding-bottom: 33px;
+}
+.footer_four_item{
+    padding-bottom: 15px;
+}
+.footer_four_item i{
+    margin-right: 20px;
+    color: var(--primary-color);
+    padding-top: 6px;
+    font-size: 15px;
+}
+.footer_four_item span{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.39px;
+}
+
+.footer_icons a i{
+    color: var(--primary-color);
+    padding-right: 25px;
+    font-size: 16px;
+}
+
+.footer_2 ul li a {
+	color: var(--primary-color);
+	font-weight: 400;
+	font-size: 14.84px;
+	line-height: 17.39px;
+}
+
+.footer_four_item a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+.footer_five h6 {
+	color: var(--primary-color);
+	font-size: 19px;
+	line-height: 22px;
+	font-weight: 500;
+	padding-bottom: 33px;
+}
+
+.footer_icons a {
+	padding-right: 10px;
+	color: var(--primary-color);
+}
+
+.footer_four_item svg{
+    width: 24px;
+}
+
+@media(min-width:992px) and (max-width:1199.98px){
+   #footer_part {
+        
+        padding:60px 0 50px 0;
+        margin-top: 90px;
+    }
+    .footer_2 {
+        padding-right: 34px;
+    }
+    .footer_one p {
+        line-height: 23px;
+        width: 96%;
+        font-size: 13px;
+    }
+    
+    .footer_four_item span {
+        font-size: 13px;
+        line-height: 23.39px;
+    }
+    .footer_2s ul li a {
+        font-size: 13px;
+    }
+    .footer_2 ul li a {
+        font-size: 13px;
+    }
+    .footer_2 h6 {
+        padding-bottom: 28px;
+    }
+    .footer_2s h6 {
+        padding-bottom: 28px;
+    }
+    .footer_icons a i {
+        padding-right: 17px;
+        margin-top: 7px;
+        font-size: 14px;
+    }  
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+    #footer_part {
+        margin-top: 80px;
+    }
+    #footer_part {
+        padding: 20px 21px 30px 20px;
+    }
+    .footer_two_main {
+        margin:57px 0 0 30px
+    }
+    .footer_one p {
+        line-height: 24px;
+        width: 100%;
+    }
+    .footer_four{
+        margin-top: 40px;
+    }
+    .footer_five{
+        margin:40px 0 0 40px
+    }
+    .footer_icons a i {
+        padding-right: 30px;
+    }
+    .footer_four h6 {
+        padding-bottom: 25px;
+    }
+    .footer_five h6 {
+        padding-bottom: 26px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767.98px){
+#footer_part {
+	padding: 20px 0 30px 0;
+}
+.footer_one p {
+	line-height: 23px;
+	width: 100%;
+}
+.footer_one {
+	margin: 30px 0 40px 0;
+}
+.footer_four h6 {
+	padding-bottom: 30px;
+}
+.footer_four {
+	margin-left: 10px;
+}
+.footer_five{
+    text-align: center;
+    padding-top: 25px;
+}
+.footer_five h6 {
+	padding-bottom: 22px;
+}
+.footer_icons a i {
+	padding: 0 17px;
+}
+}
+@media(max-width:767.98px){
+
+}
+@media (max-width:575.98px){
+    #footer_part {
+        padding: 10px 20px 30px 20px;
+    }
+    .footer_one{
+        margin-bottom: 30px;
+    }
+    .footer_one p {
+        font-size: 13px;
+        width: 100%;
+    }
+    .footer_2 h6 {
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    .footer_2s h6 {
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+    .footer_2s{
+        margin-left: 30px;
+    }
+    .footer_two_main {
+        margin-bottom: 30px;
+    }
+    .footer_four h6 {
+        padding-bottom: 27px;
+    }
+    .footer_five{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .footer_icons a i {
+        padding: 0 18px;
+    }
+    .footer_five h6 {
+        font-weight: 500;
+        padding-bottom: 24px;
+    }
+}
