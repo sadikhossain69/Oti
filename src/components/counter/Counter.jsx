@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './counter.css'
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 const Counter = () => {
+
+  const [isInViewport, setIsInViewport] = useState(false);
+
   return (
     <section id="learning_builder">
       <div className="container">
@@ -9,28 +14,40 @@ const Counter = () => {
             <h4>The leading Builder of Comfortable Homes</h4>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-md-4">
-              <div className="learning_left">
-                <h5>
-                  2,000 <span>+</span>
-                </h5>
-                <h6>Dedicated Personal</h6>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4">
+            <div className="col-lg-6 col-md-6">
               <div className="learning_right">
-                <h5>
-                  6,000 <span>+</span>
-                </h5>
+                <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
+                  {
+                    isInViewport &&
+                    <h5>
+                      <CountUp
+                        start={0}
+                        end={6000}
+                        duration={2.75}
+                      />
+                      <span>+</span>
+                    </h5>
+                  }
+                </ScrollTrigger>
                 <h6>Happy Families</h6>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4">
+            <div className="col-lg-6 col-md-6">
               <div className="learning_right">
-                <h5>
-                  3,000 <span>+</span>
-                </h5>
-                <h6>Happy Families</h6>
+              <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
+                  {
+                    isInViewport &&
+                    <h5>
+                      <CountUp
+                        start={0}
+                        end={6000}
+                        duration={2.75}
+                      />
+                      <span>+</span>
+                    </h5>
+                  }
+                </ScrollTrigger>
+                <h6>Happy Clints</h6>
               </div>
             </div>
           </div>
