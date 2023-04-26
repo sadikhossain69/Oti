@@ -7,6 +7,7 @@ import bath from "../../../assets/svg/flat3.svg";
 import Area from "../../../assets/svg/flat4.svg";
 import garage from "../../../assets/svg/flat5.svg";
 import './item.css'
+import { Link } from 'react-router-dom';
 const Items = ({projectItems}) => {
   return (
      <>
@@ -51,7 +52,7 @@ const Items = ({projectItems}) => {
                   </p>
                 </div>
                 <div className="see_more">
-                  <a href="/productdesc">See more</a>
+                  <Link to={'/products/1'}>See More</Link>
                 </div>
               </div>
             </div>

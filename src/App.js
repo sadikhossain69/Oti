@@ -11,6 +11,7 @@ import Navbar from "./components/nav/Navbar";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import ProjectPage from "./components/pages/projects/ProjectPage";
+import ProjectDetails from "./components/pages/projects/ProjectDetails";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<Aboutpage />} />
          
           <Route path="/products" element={<ProjectPage/> } />
+          <Route path="/products/:id" element={<ProjectDetails/> } />
         
           <Route path="/contact" element={<Contactpage />} />
         </Routes>
