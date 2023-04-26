@@ -2,12 +2,13 @@ import React from 'react';
 
 const SingleSlide = ({ signleSlide }) => {
 
-    const {slideDetail, slideDetailLink, slideHeader} = signleSlide
+    const {slideDetail, slideDetailLink, slideHeader, slideBgImage} = signleSlide
     
     return (
         <>
             <section
                 id="banner_part" >
+                    <img className='banner_bg_img' src={slideBgImage} alt="" />
                 <div className="container">
                     <div className="col-lg-6">
                         <div className="banner_content" data-aos="fade-up">
