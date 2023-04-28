@@ -1,40 +1,43 @@
 /* banner part start */
-#banner_part{
-   padding:130px 0 250px 0;
-    background-position: center!important;
-    background-size: cover!important;
+#banner_part {
+    padding: 130px 0 250px 0;
+    background-position: center !important;
+    background-size: cover !important;
     width: 100%;
     position: relative;
     z-index: -1;
     /* background-image: url('../../../assets/image/banner1.jpeg'); */
 }
-#banner_part2{
-   padding:130px 0 250px 0;
-    background-position: center!important;
-    background-size: cover!important;
+
+#banner_part2 {
+    padding: 130px 0 250px 0;
+    background-position: center !important;
+    background-size: cover !important;
     width: 100%;
     position: relative;
     z-index: -1;
     background-image: url('../../../assets/image/banner.jpeg');
 }
-#banner_part3{
-   padding:130px 0 250px 0;
-    background-position: center!important;
-    background-size: cover!important;
+
+#banner_part3 {
+    padding: 130px 0 250px 0;
+    background-position: center !important;
+    background-size: cover !important;
     width: 100%;
     position: relative;
     z-index: -1;
     background-image: url('../../../assets/image/about_banner.png');
 }
-#banner_part::after{
+
+#banner_part::after {
     position: absolute;
     content: '';
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background-color: rgba(0,0,0,.6);
-     z-index:-1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
 }
 
 .banner_bg_img {
@@ -45,26 +48,30 @@
     width: 100%;
 }
 
-.banner_content{
-    z-index:9999;
+.banner_content {
+    z-index: 9999;
     transform: translateY(47%);
 }
-.banner_content h1 span{
+
+.banner_content h1 span {
     display: inline-block;
 }
-.banner_content h1{
-    color:var(--tartiary-color);
+
+.banner_content h1 {
+    color: var(--tartiary-color);
     text-transform: uppercase;
-    margin-bottom:26px;
+    margin-bottom: 26px;
 }
-.banner_content p{
+
+.banner_content p {
     color: var(--tartiary-color);
     line-height: 30px;
     margin-bottom: 35px;
 }
-.banner_content a{
+
+.banner_content a {
     background: var(--tarnary-color);
-    padding:12px 30px;
+    padding: 12px 30px;
     color: var(--tartiary-color);
     font-weight: 500;
     font-size: 16px;
@@ -74,11 +81,103 @@
 
 /* responsive */
 
-@media(min-width:992px) and (max-width:1199.98px){
+@media(min-width:992px) and (max-width:1199.98px) {
+    .banner_content {
+        transform: translateY(40%);
+    }
+
+    .banner_left h1 {
+        font-size: 36px;
+    }
+
+    .banner_left p {
+        padding-top: 21px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991.98px) {
+
+    /* banner part */
+    .banner_left {
+        margin: 90px 0 0 0;
+    }
+
+    .banner_left h1 {
+        font-size: 30px;
+        line-height: 49px;
+    }
+
+    .banner_left p {
+        padding-top: 14px;
+        font-size: 15px;
+    }
+
+    .banner_right img {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+
+    /* banner part */
     #banner_part {
-	padding: 100px 0 210px 0;
+        margin: 80px 0 80px 0;
+    }
+
+    .banner_left {
+        margin: 0 20px 60px 20px;
+    }
+
+    .banner_left p {
+        font-size: 16px;
+        padding-top: 25px;
+    }
+
+    .banner_right img {
+        margin-left: 0;
+    }
+
+    .banner_rows {
+        flex-direction: column-reverse;
+    }
 }
-.banner_content {
-	transform: translateY(40%);
-}
+
+@media (max-width:575.98px) {
+
+    /* banner part */
+    #banner_part {
+        margin: 50px 0 70px 0;
+    }
+
+    .banner_left {
+        margin: 0 20px 60px 20px;
+    }
+
+    .banner_left h1 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .banner_left p {
+        padding-top: 18px;
+        font-size: 15px;
+    }
+
+    .banner_left a {
+        padding: 8px 32px;
+        font-size: 16px;
+    }
+
+    .banner_right img {
+        margin-left: 0;
+    }
+
+    .banner_right img {
+        padding-bottom: 40px;
+    }
+
+    #banner_part .row {
+        flex-direction: column-reverse;
+    }
 }
