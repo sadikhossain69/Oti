@@ -8,19 +8,23 @@ import ProjectPage from "../projects/ProjectPage";
 import Counter from "../../counter/Counter";
 import Facilities from "../../facilities/Facilities";
 import Caro from "../bannar/Caro";
+import ContactPage from "../contact/ContactPage";
+import Caro2 from "../bannar/Caro2";
 
 const Homepage = () => {
   return (
-    <div> 
-      <Caro/>
+    <div>
+      {/* <Caro /> */}
+      <Caro2/>
       {/* <Banner /> */}
       <Counter />
-      <Facilities/>
-      
-      <ProjectPage/>
+      <Facilities />
+
+      <ProjectPage />
       <Team />
       <Testimonials />
       <Contact />
+      {/* <ContactPage /> */}
     </div>
   );
 };

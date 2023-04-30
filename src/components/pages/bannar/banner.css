@@ -4,6 +4,7 @@
     background-position: center !important;
     background-size: cover !important;
     width: 100%;
+    height: 85vh;
     position: relative;
     z-index: -1;
     /* background-image: url('../../../assets/image/banner1.jpeg'); */
@@ -82,6 +83,11 @@
 /* responsive */
 
 @media(min-width:992px) and (max-width:1199.98px) {
+
+    #banner_part {
+        height: 100%;
+    }
+
     .banner_content {
         transform: translateY(40%);
     }
@@ -97,6 +103,10 @@
 }
 
 @media(min-width:768px) and (max-width:991.98px) {
+
+    #banner_part {
+        height: 100%;
+    }
 
     /* banner part */
     .banner_left {
@@ -120,9 +130,13 @@
 
 @media (min-width:576px) and (max-width:767.98px) {
 
+    #banner_part {
+        height: 100%;
+    }
+
     /* banner part */
     #banner_part {
-        margin: 80px 0 80px 0;
+        margin: 0px 0 80px 0;
     }
 
     .banner_left {
@@ -147,7 +161,8 @@
 
     /* banner part */
     #banner_part {
-        margin: 50px 0 70px 0;
+        margin: 0 0 70px 0;
+        height: 100%;
     }
 
     .banner_left {
