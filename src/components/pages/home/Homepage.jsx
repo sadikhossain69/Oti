@@ -23,8 +23,8 @@ const Homepage = () => {
       <ProjectPage />
       <Team />
       <Testimonials />
-      <Contact />
-      {/* <ContactPage /> */}
+      {/* <Contact /> */}
+      <ContactPage />
     </div>
   );
 };

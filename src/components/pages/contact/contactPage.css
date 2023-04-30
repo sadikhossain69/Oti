@@ -3,7 +3,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     /* margin-bottom: 4rem; */
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .contact_section {
@@ -89,4 +89,20 @@
     box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .contact_section {
+        flex-direction: column;
+    }
+
+    .contact_left {
+        border: 0;
+        padding: 0;
+    }
+
+    .contact_right {
+        padding: 0;
+    }
 }
