@@ -47,21 +47,21 @@ const Footer = () => {
               <div className="footer_four">
                 <h6>Contact</h6>
                 <div className="footer_four_item d-flex">
-                 <FaPhoneAlt></FaPhoneAlt>
+                 <FaPhoneAlt className='footer_four_items_icon'></FaPhoneAlt>
                   <span>
                     <a href="tel:01922-090882">01922-090882</a>
                   </span>
                 </div>
                 <div className="footer_four_item d-flex">
-                  <FaEnvelope></FaEnvelope>
+                  <FaEnvelope className='footer_four_items_icon'></FaEnvelope>
                   <span>
                     <a href="mailto:dreamerpropertiesltd@gmail.com">
                       dreamerpropertiesltd@gmail.com
                     </a>
                   </span>
                 </div>
-                <div className="footer_four_item d-flex">
-                  <FaMapMarkedAlt></FaMapMarkedAlt>
+                <div className="footer_four_item ">
+                  <FaMapMarkedAlt className='footer_four_items_icon'></FaMapMarkedAlt>
                   <span>
                     213/84/A213/84/A, Dream Cottage-01, Samad Nagar Residential
                     Area, Kajlar Par , Jatrabari,Dhaka, Dhaka, Bangladesh
