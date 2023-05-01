@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/image/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [navbarHidden, setNavbarHidden] = useState(false);
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
+
+
   const navToggle = () => {
     if (active === "nav__menu") {
       setActive("nav__menu nav__active");
@@ -16,26 +20,73 @@ const Navbar = () => {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
   };
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(navbarHidden)
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.pageYOffset;
+    if (currentScrollPosition === 0) {
+      setNavbarHidden(false);
+    } else if (currentScrollPosition > scrollPosition) {
+      setNavbarHidden(true);
+    } else {
+      setNavbarHidden(false);
+    }
+    // if (currentScrollPosition > scrollPosition) {
+    //   setNavbarHidden(true)
+    // } else {
+    //   setNavbarHidden(false)
+    // }
+    setScrollPosition(currentScrollPosition);
+  };
+
   return (
     <nav className="nav">
       <Link to={'/'} className="nav__brand">
         <img src={logo} alt="" className="logo" />
-        
+
       </Link>
-      <ul className={active}>
-        <li className="nav__item">
-          <NavLink to="/">HOME</NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="/about">ABOUT</NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="/products">PROJECTS</NavLink>
-        </li>
-        <li className="nav__item">
-          <NavLink to="/contact">CONTACT</NavLink>
-        </li>
-      </ul>
+      {
+        navbarHidden ?
+          <ul className={''}>
+            <li className="nav_hidden">
+              <NavLink to="/">HOME</NavLink>
+            </li>
+            <li className="nav_hidden">
+              <NavLink to="/about">ABOUT</NavLink>
+            </li>
+            <li className="nav_hidden">
+              <NavLink to="/products">PROJECTS</NavLink>
+            </li>
+            <li className="nav_hidden">
+              <NavLink to="/contact">CONTACT</NavLink>
+            </li>
+          </ul>
+          :
+          <ul className={active}>
+            <li className="nav__item">
+              <NavLink to="/">HOME</NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/about">ABOUT</NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/products">PROJECTS</NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/contact">CONTACT</NavLink>
+            </li>
+          </ul>
+      }
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
         <div className="line2"></div>

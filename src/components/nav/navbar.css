@@ -60,6 +60,12 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .nav_hidden {
+    display: none !important;
+    
+  }
+
   .nav__toggler {
     display: block;
     cursor: pointer;
@@ -74,7 +80,7 @@
     top: 4.9rem;
     right: 0;
     padding-right: 2rem;
-    padding-top: 8rem;
+    padding-top: 4rem;
     height: 100%;
     width: 40vw;
     background: #90CCE5; 
