@@ -2,6 +2,7 @@ import React from 'react';
 import pic from '../../../assets/image/banner.jpeg'
 import { slideData } from './slideData';
 import SingleSlide from './SingleSlide';
+import './banner.css'
 
 const Caro2 = () => {
     return (
