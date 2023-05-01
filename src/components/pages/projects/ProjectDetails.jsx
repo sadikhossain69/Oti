@@ -1,6 +1,6 @@
 import React from 'react';
 import "./projectDetails.css"
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import product_banner from "../../../assets/image/product_banner.png"
 import Slider from 'react-slick';
 import location_icon from "../../../assets/svg/flat1.svg"
@@ -77,7 +77,7 @@ const ProjectDetails = () => {
                                     <span>South facing</span>
                                 </div>
                                 <div class="product_btn">
-                                    <a href="#">Contact Us</a>
+                                    <Link to={'/contact'}>Contact Us</Link>
                                 </div>
                             </div>
                         </div>

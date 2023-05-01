@@ -7,7 +7,8 @@ import {
   FaPhoneAlt,
   FaMapMarkedAlt,
 } from "react-icons/fa";
-import footer from "../../assets/image/footerimage.png"
+// import footer from "../../assets/image/footerimage.png"
+import footer from '../../assets/image/dreamer.png'
 const Footer = () => {
   return (
     <div>
