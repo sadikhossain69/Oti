@@ -34,3 +34,15 @@
     color: var(--tartiary-color);
     background: var(--primary-color);
 }
+
+/* Responsive */
+@media (max-width:575.98px){
+    .project_list-item{
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 7rem;
+        height: 3rem;
+    }
+}
