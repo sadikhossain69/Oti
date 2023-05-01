@@ -18,10 +18,10 @@ const Navbar = () => {
   };
   return (
     <nav className="nav">
-      <a href="/" className="nav__brand">
+      <Link to={'/'} className="nav__brand">
         <img src={logo} alt="" className="logo" />
         
-      </a>
+      </Link>
       <ul className={active}>
         <li className="nav__item">
           <NavLink to="/">HOME</NavLink>
