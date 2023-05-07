@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import pic from '../../../assets/image/banner.jpeg'
 import { slideData } from './slideData';
 import SingleSlide from './SingleSlide';
 import './banner.css'
+import baseURL from '../../../utils/baseURL';
 
 const Caro2 = () => {
+
+    const [bannerData, setBannerData] = useState([])
+
+    const getBannerData = async () => {
+        const { data } = await baseURL.get('/banner/list')
+        console.log(data)
+    }
+
+    useEffect(() => {
+        getBannerData()
+    }, [])
+
     return (
         <>
             <section>
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         {
-                            slideData.map(e => <SingleSlide 
-                                key={e.id}
+                            bannerData?.map(e => <SingleSlide
+                                key={e._id}
                                 signleSlide={e}
                             />)
                         }

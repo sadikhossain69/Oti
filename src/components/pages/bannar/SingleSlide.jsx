@@ -2,24 +2,24 @@ import React from 'react';
 
 const SingleSlide = ({ signleSlide }) => {
 
-    const { slideDetail, slideDetailLink, slideHeader, slideBgImage, id } = signleSlide
+    const { title, description, banner, _id} = signleSlide
 
     return (
         <>
-            <div className={`carousel-item ${id === 1 && 'active'}`}>
+            <div className={`carousel-item active`}>
                 <section
                     id="banner_part" >
-                    <img className='banner_bg_img' src={slideBgImage} alt="" />
+                    <img className='banner_bg_img' src={banner} alt="" />
                     <div className="container">
                         <div className="col-lg-6">
                             <div className="banner_content" data-aos="fade-up">
                                 <h1>
-                                    {slideHeader}
+                                    {title}
                                 </h1>
                                 <p>
-                                    {slideDetail}
+                                    {description}
                                 </p>
-                                <a href={slideDetailLink}>See more</a>
+                                <a href='#' >See more</a>
                             </div>
                         </div>
                     </div>
