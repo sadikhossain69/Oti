@@ -123,7 +123,7 @@ const Aboutsec = () => {
                 data-aos-duration="1000">
                 <img src={icon1} alt="" />
                 <p>
-                  {aboutData.philosophy[0]}
+                  {aboutData.philosophy?.[0]}
                 </p>
               </div>
               <div
