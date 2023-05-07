@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './about.css'
 import story from "../../../assets/image/story_img.png";
 import vision from '../../../assets/image/vision_shape.png';
 import icon1 from '../../../assets/image/icons2.png'
 import icon2 from '../../../assets/image/icons.png'
 import icon3 from '../../../assets/image/icons3.png'
-import { FaGem, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
+import baseURL from '../../../utils/baseURL';
+
 const Aboutsec = () => {
+
+
+  const [aboutData, setAboutData] = useState({})
+
+  const getAboutData = async () => {
+    const { data } = await baseURL.get(`/about/list`)
+    setAboutData(data.data)
+  }
+
+  useEffect(() => {
+    getAboutData()
+  }, [])
+
   return (
     <>
       <section id="banner_About">
@@ -68,9 +82,7 @@ const Aboutsec = () => {
             <div className="mission_main">
               <h4>OUR MISSION </h4>
               <p>
-                <i className="fa-solid fa-quote-left"></i>Our Mission is to
-                purvey our revered clients with the value of Elegance, Credulity
-                and the principle of Acceptance”
+                <i className="fa-solid fa-quote-left"></i>”{aboutData.mission}”
               </p>
             </div>
           </div>
@@ -87,9 +99,7 @@ const Aboutsec = () => {
             <div className="our_visionmain">
               <h4>OUR VISION</h4>
               <p>
-                <i className="fa-solid fa-quote-left"></i>Our Vision is to build
-                an affordable and sustainable dream house that enhance the
-                quality of life for our beloved clients”
+                <i className="fa-solid fa-quote-left"></i>”{aboutData.vision}”
               </p>
             </div>
             <div className="vision_img">
@@ -113,9 +123,7 @@ const Aboutsec = () => {
                 data-aos-duration="1000">
                 <img src={icon1} alt="" />
                 <p>
-                  Elegance: Elegance in every aspect of each project is how DPL
-                  targets to win the hearts of their esteemed clientele as DPL
-                  believes in that "Home is the symbol of Elegance "
+                  {aboutData.philosophy[0]}
                 </p>
               </div>
               <div
@@ -124,8 +132,7 @@ const Aboutsec = () => {
                 data-aos-duration="1500">
                 <img src={icon2} alt="" />
                 <p>
-                  Credibility: Assurance of trustworthiness on time delivery of
-                  the Dream Home with pledged attribute and specification
+                  {aboutData.philosophy?.[1]}
                 </p>
               </div>
               <div
@@ -134,9 +141,7 @@ const Aboutsec = () => {
                 data-aos-duration="2000">
                 <img src={icon3} alt="" />
                 <p>
-                  Acceptance: Acceptance of every clients as like the member of
-                  our family and stay true to everyone, drive what they believe
-                  in and dedicated to them
+                  {aboutData.philosophy?.[1]}
                 </p>
               </div>
             </div>
