@@ -11,7 +11,7 @@ const Caro2 = () => {
 
     const getBannerData = async () => {
         const { data } = await baseURL.get('/banner/list')
-        console.log(data)
+        setBannerData(data)
     }
 
     useEffect(() => {
