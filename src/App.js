@@ -13,7 +13,6 @@ import 'aos/dist/aos.css'
 import ProjectPage from "./components/pages/projects/ProjectPage";
 import ProjectDetails from "./components/pages/projects/ProjectDetails";
 import ContactPage from "./components/pages/contact/ContactPage";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   useEffect(() => {
@@ -34,10 +33,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      <MessengerCustomerChat
-        pageId="100091991692359"
-        appId="1371154353446825"
-      />,
     </>
   );
 }
