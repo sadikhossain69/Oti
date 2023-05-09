@@ -13,7 +13,7 @@ const Items = ({projectItems}) => {
      <>
      {
       projectItems.map((projectItem)=>{
-        const {id, img, category, construction,beds, baths, area, carparking, address} = projectItem;
+        const {id, _id, img, category, construction,beds, baths, area, carparking, address} = projectItem;
         return (
           <div className="col-lg-4 col-md-4 mars_right" data-aos="fade-up">
             <div className="flat_item" key={id}>
@@ -52,7 +52,7 @@ const Items = ({projectItems}) => {
                   </p>
                 </div>
                 <div className="see_more">
-                  <Link to={'/products/1'}>See More</Link>
+                  <Link to={`/products/${_id}`}>See More</Link>
                 </div>
               </div>
             </div>

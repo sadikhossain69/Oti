@@ -23,7 +23,7 @@ const ProjectPage = () => {
   }, [])
 
   // find project category and add 'all' category.
-  const allNavList = ['All', ...new Set(propertyData.map((project) => project.category))];
+  const allNavList = ['All', ...new Set(projects.map((project) => project.category))];
 
   const [projectItems, setMenuItems] = useState(projects)
   //  
