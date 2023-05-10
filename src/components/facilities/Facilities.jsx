@@ -8,6 +8,7 @@ const Facilities = () => {
   return (
     <section id="friendly_part">
             <div className="container">
+                <h2 className='text-center font-weight-bold'>The Features We Follow</h2>
                 <div className="col-lg-10 offset-1 friendly_gap" data-aos="fade-right">
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
@@ -17,7 +18,7 @@ const Facilities = () => {
                                     <h5>Eco-Friendly</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    <p>Friendly homes and viable complexes </p>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +29,7 @@ const Facilities = () => {
                                     <h5>Client Satisfaction</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    <p>Smart life with smart life </p>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +40,7 @@ const Facilities = () => {
                                     <h5>Innovation</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    <p>Innovative structural design for an excellent home </p>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +51,7 @@ const Facilities = () => {
                                     <h5>Smart Home</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    <p>Assure client satisfaction </p>
                                 </div>
                             </div>
                         </div>

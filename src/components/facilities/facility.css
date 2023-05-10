@@ -40,7 +40,7 @@
     
 }
 .card_item:hover .card_bottom{
-    bottom:15px;
+    bottom:60px;
     opacity: 1;
     visibility: visible;
 }
