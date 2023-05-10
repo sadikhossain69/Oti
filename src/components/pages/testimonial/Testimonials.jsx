@@ -67,15 +67,15 @@ const Testimonials = () => {
                           </div>
                           <div class="col-lg-7 col-md-6">
                             <div class="abdur_right">
-                              <h5>{name}</h5>
+                              <h5 className='font-weight-bold'>{name}</h5>
                               {/* <h6>{pos}</h6> */}
                               <p>{description}</p>
                               <div class="start_icon">
-                                <FaStar></FaStar>
-                                <FaStar></FaStar>
-                                <FaStar></FaStar>
-                                <FaStar></FaStar>
-                                <FaStar></FaStar>
+                                <FaStar color='yellow'></FaStar>
+                                <FaStar color='yellow'></FaStar>
+                                <FaStar color='yellow'></FaStar>
+                                <FaStar color='yellow'></FaStar>
+                                <FaStar color='yellow'></FaStar>
                               </div>
                             </div>
                           </div>
