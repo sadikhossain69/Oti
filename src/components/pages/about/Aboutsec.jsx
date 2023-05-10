@@ -43,7 +43,7 @@ const Aboutsec = () => {
       {/* <!-- about banner part end -->
 
     <!-- our story part start --> */}
-      <section id="ours_story">
+      <section id="ours_story" className='mt-4'>
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-6">
@@ -123,7 +123,7 @@ const Aboutsec = () => {
                 data-aos-duration="1000">
                 <img src={icon1} alt="" />
                 <p>
-                  {aboutData.philosophy?.[0]}
+                  Elegance: Elegance in every aspect of each project is how DPL targets to win the hearts of their esteemed clientele as DPL believes in that "Home is the symbol of Elegance
                 </p>
               </div>
               <div
@@ -132,7 +132,7 @@ const Aboutsec = () => {
                 data-aos-duration="1500">
                 <img src={icon2} alt="" />
                 <p>
-                  {aboutData.philosophy?.[1]}
+                  Credibility: Assurance of trustworthiness on time delivery of the Dream Home with pledged attribute and specification.
                 </p>
               </div>
               <div
@@ -141,7 +141,7 @@ const Aboutsec = () => {
                 data-aos-duration="2000">
                 <img src={icon3} alt="" />
                 <p>
-                  {aboutData.philosophy?.[1]}
+                  Acceptance: Acceptance of every clients as like the member of our family and stay true to everyone, drive what they believe in and dedicated to them
                 </p>
               </div>
             </div>

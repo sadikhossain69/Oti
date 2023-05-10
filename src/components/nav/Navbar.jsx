@@ -30,8 +30,6 @@ const Navbar = () => {
     };
   }, []);
 
-  console.log(navbarHidden)
-
   const handleScroll = () => {
     const currentScrollPosition = window.pageYOffset;
     if (currentScrollPosition === 0) {
