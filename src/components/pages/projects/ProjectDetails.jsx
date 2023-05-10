@@ -42,7 +42,7 @@ const ProjectDetails = () => {
             <section id="product_part">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-5">
+                        <div class="col-lg-4 col-md-5">
                             <Slider {...settings}>
                                 {
                                     singlePropertyData.properties?.map(e => <>
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
                                 }
                             </Slider>
                         </div>
-                        <div class="col-lg-6 col-md-7">
+                        <div class="col-lg-8 col-md-7">
                             <div class="product_right">
                                 <h4>{singlePropertyData.name}</h4>
                                 <h3>{singlePropertyData.type}</h3>

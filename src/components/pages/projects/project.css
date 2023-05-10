@@ -31,8 +31,8 @@
 }
 
 .active-work{
-    color: var(--tartiary-color);
-    background: var(--primary-color);
+    color: var(--primary-color);
+    background: #90CCE5;
 }
 
 /* Responsive */
