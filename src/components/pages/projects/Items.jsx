@@ -6,6 +6,8 @@ import bed from "../../../assets/svg/flat2.svg";
 import bath from "../../../assets/svg/flat3.svg";
 import Area from "../../../assets/svg/flat4.svg";
 import garage from "../../../assets/svg/flat5.svg";
+import unitsLogo from '../../../assets/svg/units.svg'
+import storysLogo from '../../../assets/svg/storeys.svg'
 import './item.css'
 import { Link } from 'react-router-dom';
 
@@ -15,7 +17,7 @@ const Items = ({projectItems}) => {
      <>
      {
       projectItems.map((projectItem)=>{
-        const { _id, properties, location, category, construction,beds, baths, area, carparking, address} = projectItem;
+        const { _id, properties, storeys, location, category, construction,beds, baths, area, carparking, address} = projectItem;
         return (
           <div className="col-lg-4 col-md-4 mars_right" data-aos="fade-up">
             <div className="flat_item" key={_id}>
@@ -33,7 +35,7 @@ const Items = ({projectItems}) => {
                   <div className="Three_beds">
                     <p>
                       <img src={bed} alt="" srcset="" />
-                      {beds}
+                      {storeys}
                     </p>
                   </div>
                   <div className="Three_baths">
