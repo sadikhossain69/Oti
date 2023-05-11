@@ -1,10 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './counter.css'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import baseURL from '../../utils/baseURL';
 const Counter = () => {
 
   const [isInViewport, setIsInViewport] = useState(false);
+  const [counterData, setCounterData] = useState({})
+
+  const getCounterData = async () => {
+    const { data } = await baseURL('/client/list')
+    console.log(data.data)
+    setCounterData(data.data)
+  }
+
+  useEffect(() => {
+    getCounterData()
+  })
 
   return (
     <section id="learning_builder">
@@ -22,7 +34,7 @@ const Counter = () => {
                     <h5>
                       <CountUp
                         start={0}
-                        end={6000}
+                        end={counterData.families}
                         duration={2.75}
                       />
                       <span>+</span>
@@ -34,13 +46,13 @@ const Counter = () => {
             </div>
             <div className="col-lg-6 col-md-6">
               <div className="learning_right">
-              <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
+                <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
                   {
                     isInViewport &&
                     <h5>
                       <CountUp
                         start={0}
-                        end={6000}
+                        end={counterData.clients}
                         duration={2.75}
                       />
                       <span>+</span>
