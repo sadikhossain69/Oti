@@ -117,6 +117,24 @@
     width: 24px;
 }
 
+/* Whatsapp Icon */
+.whatsapp_icon {
+    position: fixed;
+    color: white;
+    right: 25px;
+    bottom: 20px;
+    background-image: radial-gradient(#07d01e, #3f4839c2);
+    /* width: 70px;
+    height: 70px; */
+    padding: 11px;
+    border-radius: 50%;
+}
+
+.whatsapp_icon:hover {
+    background-image: radial-gradient(#48f15d, #3f4839c2);
+    transition: all .2s ease-in;
+}
+
 @media(min-width:992px) and (max-width:1199.98px){
    #footer_part {
         

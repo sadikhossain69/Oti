@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaMapMarkedAlt,
 } from "react-icons/fa";
+import {SiWhatsapp} from 'react-icons/si'
 // import footer from "../../assets/image/footerimage.png"
 import footer from '../../assets/image/dreamer.png'
 const Footer = () => {
@@ -48,7 +49,7 @@ const Footer = () => {
               <div className="footer_four">
                 <h6>Contact</h6>
                 <div className="footer_four_item d-flex">
-                 <FaPhoneAlt className='footer_four_items_icon'></FaPhoneAlt>
+                  <FaPhoneAlt className='footer_four_items_icon'></FaPhoneAlt>
                   <span>
                     <a href="tel:01922-090882">01922-090882</a>
                   </span>
@@ -87,6 +88,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <a href="https://api.whatsapp.com/send/?phone=%2B8801922090882&text&type=phone_number&app_absent=0" target={'_blank'} rel="noreferrer">
+            <SiWhatsapp className='whatsapp_icon' size={50} />
+          </a>
         </div>
       </section>
     </div>
