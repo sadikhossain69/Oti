@@ -8,6 +8,7 @@ import Area from "../../../assets/svg/flat4.svg";
 import garage from "../../../assets/svg/flat5.svg";
 import unitsLogo from '../../../assets/svg/units.svg'
 import storysLogo from '../../../assets/svg/storeys.svg'
+import floorLogo from '../../../assets/svg/floor.svg'
 import './item.css'
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const Items = ({projectItems}) => {
      <>
      {
       projectItems.map((projectItem)=>{
-        const { _id, properties, storeys, location, category, construction,beds, baths, area, carparking, address} = projectItem;
+        const { _id, properties, units, parking, storeys, floor, location, category, construction,beds, baths, area, carparking, address} = projectItem;
         return (
           <div className="col-lg-4 col-md-4 mars_right" data-aos="fade-up">
             <div className="flat_item" key={_id}>
@@ -34,25 +35,25 @@ const Items = ({projectItems}) => {
                 <div className="content2 d-flex">
                   <div className="Three_beds">
                     <p>
-                      <img src={bed} alt="" srcset="" />
+                      <img src={storysLogo} alt="" srcset="" />
                       {storeys}
                     </p>
                   </div>
                   <div className="Three_baths">
                     <p>
-                      <img src={bath} alt="" srcset="" />
-                      {baths}
+                      <img src={floorLogo} alt="" srcset="" />
+                      {floor}
                     </p>
                   </div>
                 </div>
                 <div className="content3 d-flex">
                   <p>
-                    <img src={Area} alt="" srcset="" />
-                    {area}
+                    <img src={unitsLogo} alt="" srcset="" />
+                    {units}
                   </p>
                   <p>
                     <img src={garage} alt="" srcset="" />
-                    {carparking}
+                    {parking}
                   </p>
                 </div>
                 <div className="see_more">

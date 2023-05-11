@@ -10,7 +10,6 @@ const Counter = () => {
 
   const getCounterData = async () => {
     const { data } = await baseURL('/client/list')
-    console.log(data.data)
     setCounterData(data.data)
   }
 
