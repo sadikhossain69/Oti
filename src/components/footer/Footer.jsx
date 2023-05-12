@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
           <a href="https://api.whatsapp.com/send/?phone=%2B8801922090882&text&type=phone_number&app_absent=0" target={'_blank'} rel="noreferrer">
-            <SiWhatsapp className='whatsapp_icon' size={50} />
+            <SiWhatsapp className='whatsapp_icon' size={58} />
           </a>
         </div>
       </section>
