@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import "./projectDetails.css"
 import { Link, useParams } from 'react-router-dom';
-import product_banner from "../../../assets/image/product_banner.png"
 import Slider from 'react-slick';
 import location_icon from "../../../assets/svg/flat1.svg"
 import bed from "../../../assets/svg/flat2.svg";
-import bath from "../../../assets/svg/flat3.svg";
-import Area from "../../../assets/svg/flat4.svg";
 import garage from "../../../assets/svg/flat5.svg";
 import baseURL from '../../../utils/baseURL';
+import { FaChessBoard } from 'react-icons/fa';
+import { BiArea, BiUnite } from 'react-icons/bi'
+import { GiUndergroundCave } from 'react-icons/gi'
+import { SiSalesforce } from 'react-icons/si';
+import storeysLogo from '../../../assets/svg/storeys.svg'
 
 const ProjectDetails = () => {
 
@@ -63,36 +65,37 @@ const ProjectDetails = () => {
                                 </div>
                                 <div class="product_item2 d-flex ">
                                     <div class="product_2sitem">
-                                        <img className='project_details_icons' src={bed} alt="" />
+                                        <img className='project_details_icons' src={storeysLogo} alt="" />
                                         <span>{singlePropertyData.storeys} Storeys</span>
                                     </div>
                                     <div class="product_2item">
-                                        <img className='project_details_icons' src={bath} alt="" />
+                                        <BiArea className='project_details_icons' />
                                         <span>{singlePropertyData.area} Area</span>
                                     </div>
                                 </div>
                                 <div class="product_item2 d-flex ">
                                     <div class="product_2sitem">
-                                        <img className='project_details_icons' src={bed} alt="" />
-                                        <span>{singlePropertyData.floor} Floor</span>
+                                        <FaChessBoard className='project_details_icons' />
+                                        <span>{singlePropertyData.floor} Sqft</span>
                                     </div>
                                     <div class="product_2item">
-                                        <img className='project_details_icons' src={bath} alt="" />
+                                        <BiUnite className="project_details_icons" />
                                         <span>{singlePropertyData.units} Units</span>
                                     </div>
                                 </div>
                                 <div class="product_item2  d-flex ">
                                     <div class="product_2sitem product_middle">
-                                        <img className='project_details_icons' src={Area} alt="" />
-                                        <span>{singlePropertyData.basement?.toString()} Basement</span>
+                                        <GiUndergroundCave className="project_details_icons" />
+                                        <span>{singlePropertyData.basement?.toString()}</span>
                                     </div>
                                     <div class="product_2item">
                                         <img className='project_details_icons' src={garage} alt="" />
-                                        <span>{singlePropertyData.parking?.toString()} Parking</span>
+                                        <span>{singlePropertyData.parking?.toString()}</span>
                                     </div>
                                 </div>
                                 <div class="product_last">
-                                    <img className='project_details_icons' src={garage} alt="" />
+                                    <SiSalesforce
+                                    className='project_details_icons' />
                                     <span>{singlePropertyData.sales} Sales</span>
                                 </div>
                                 <div class="product_btn">
@@ -101,7 +104,7 @@ const ProjectDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{marginTop: '20px'}}>
+                    <div style={{ marginTop: '20px' }}>
                         <h5>{singlePropertyData.description}</h5>
                     </div>
                 </div>
