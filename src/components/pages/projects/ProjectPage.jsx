@@ -22,7 +22,7 @@ const ProjectPage = () => {
   }, [])
 
   // find project category and add 'all' category.
-  const allNavList = ['All', ...new Set(propertyData.map((project) => project.type))];
+  const allNavList = ['All', ...new Set(propertyData.map((project) => project.area))];
 
   // console.log(allNavList)
 
@@ -37,7 +37,7 @@ const ProjectPage = () => {
       setMenuItems(propertyData);
       return;
     }
-    const newProjectItems = propertyData.filter((item) => item.type === category
+    const newProjectItems = propertyData.filter((item) => item.area === category
     );
     setMenuItems(newProjectItems);
   }
