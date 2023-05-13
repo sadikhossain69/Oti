@@ -1,7 +1,11 @@
 import React from 'react'
 import './contact.css'
+import { useForm } from 'react-hook-form';
 
-const contact = () => {
+const Contact = () => {
+
+  
+
   return (
     <section id="contact_part">
       <div class="container">
@@ -39,5 +43,5 @@ const contact = () => {
   );
 }
 
-export default contact
+export default Contact
 

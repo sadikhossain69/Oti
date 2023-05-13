@@ -3,8 +3,16 @@ import contactImg from '../../../assets/image/abdur.png'
 import './contactPage.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import {AiFillMail} from 'react-icons/ai'
+import { useForm } from 'react-hook-form';
 
 const ContactPage = () => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm()
+
+    const contactSubmit = data => {
+        console.log(data)
+    }
+
     return (
         <section id='Contact_section'>
             <div className="container contact_section">
@@ -34,7 +42,7 @@ const ContactPage = () => {
                     </div>
                 </div>
                 <div className='contact_right'>
-                    <form action="">
+                    <form onSubmit={handleSubmit(contactSubmit)} action="">
                         <div className="contact_input">
                             <label htmlFor="">Name</label>
                             <input type="text" />
