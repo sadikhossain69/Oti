@@ -26,7 +26,7 @@ const Facilities = () => {
                             <div className="card_item">
                                 <div className="card_top">
                                     <img src={fac1} alt="" srcset=""/>
-                                    <h5>Client Satisfaction</h5>
+                                    <h5>Satisfaction</h5>
                                 </div>
                                 <div className="card_bottom">
                                     <p>Smart life with smart life </p>
