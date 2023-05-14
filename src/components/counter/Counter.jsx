@@ -58,7 +58,7 @@ const Counter = () => {
                     </h5>
                   }
                 </ScrollTrigger>
-                <h6>Happy Clients</h6>
+                <h6>Projects Completed</h6>
               </div>
             </div>
           </div>
