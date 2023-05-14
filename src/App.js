@@ -13,7 +13,7 @@ import 'aos/dist/aos.css'
 import ProjectPage from "./components/pages/projects/ProjectPage";
 import ProjectDetails from "./components/pages/projects/ProjectDetails";
 import ContactPage from "./components/pages/contact/ContactPage";
-import FacebookMessengerChat from "./utils/FacebookMassengerChat";
+// import FacebookMessengerChat from "./utils/FacebookMassengerChat";
 
 function App() {
   useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
 
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <FacebookMessengerChat />
+        {/* <FacebookMessengerChat /> */}
         <Footer />
       </BrowserRouter>
     </>
