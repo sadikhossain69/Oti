@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/image/dreamer.png";
 import { Link, NavLink } from "react-router-dom";
+import { FaEnvelope, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
+import { useWindowSize } from "@react-hook/window-size";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navbarHidden, setNavbarHidden] = useState(false);
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
+  const [width, height] = useWindowSize()
 
 
   const navToggle = () => {
@@ -70,20 +74,44 @@ const Navbar = () => {
             </li>
           </ul>
           :
-          <ul className={active}>
-            <li className="nav__item">
-              <NavLink to="/">HOME</NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/about">ABOUT</NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/products">PROJECTS</NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/contact">CONTACT</NavLink>
-            </li>
-          </ul>
+          <>
+            <ul className={active}>
+              <li className="nav__item">
+                <NavLink to="/">HOME</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/about">ABOUT</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/products">PROJECTS</NavLink>
+              </li>
+              <li className="nav__item">
+                <NavLink to="/contact">CONTACT</NavLink>
+              </li>
+              {
+                width < 769 &&
+                <div className="footer_icons">
+                  <a href="https://www.facebook.com/dreamcottageltd">
+                    <FaFacebook className="icon"></FaFacebook>
+                  </a>
+                  <a href="mailto:dreamerpropertiesltd@gmail.com">
+                    <FaEnvelope className="icon"></FaEnvelope>
+                  </a>
+                  <a href="tel:01922-090882">
+                    <FaPhoneAlt className="icon"></FaPhoneAlt>
+                  </a>
+                  <a href="/">
+                    <BsInstagram className="icon" />
+                  </a>
+                  <a href="/" target='_blank'>
+                    <BsYoutube className="icon" size={21} />
+                  </a>
+                </div>
+              }
+
+            </ul>
+
+          </>
       }
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
