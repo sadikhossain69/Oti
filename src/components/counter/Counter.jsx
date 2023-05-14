@@ -22,7 +22,7 @@ const Counter = () => {
       <div className="container">
         <div className="col-lg-8 offset-2 learninggap" data-aos="fade-up">
           <div className="learning_header">
-            <h4>The leading Builder of Comfortable Homes</h4>
+            {/* <h4>The leading Builder of Comfortable Homes</h4> */}
           </div>
           <div className="row">
             <div className="col-lg-6 col-md-6">
@@ -30,7 +30,7 @@ const Counter = () => {
                 <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
                   {
                     isInViewport &&
-                    <h5>
+                    <h5 style={{color: "blue"}}>
                       <CountUp
                         start={0}
                         end={counterData.families}
@@ -48,7 +48,7 @@ const Counter = () => {
                 <ScrollTrigger onEnter={() => setIsInViewport(true)} onExit={() => setIsInViewport(false)}>
                   {
                     isInViewport &&
-                    <h5>
+                    <h5 style={{color: "blue"}}>
                       <CountUp
                         start={0}
                         end={counterData.clients}
