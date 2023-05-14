@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleSlide = ({ signleSlide }) => {
 
-    const { title, description, banner, _id} = signleSlide
+    const { title, description, banner, _id } = signleSlide
 
     return (
         <>
@@ -19,7 +20,7 @@ const SingleSlide = ({ signleSlide }) => {
                                 <p>
                                     {description}
                                 </p>
-                                <a href='#' >See more</a>
+                                    {/* <Link to={'/about'} >See more</Link> */}
                             </div>
                         </div>
                     </div>
