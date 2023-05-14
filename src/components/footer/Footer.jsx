@@ -7,7 +7,8 @@ import {
   FaPhoneAlt,
   FaMapMarkedAlt,
 } from "react-icons/fa";
-import {SiWhatsapp} from 'react-icons/si'
+import { SiWhatsapp } from 'react-icons/si'
+import {BsInstagram, BsYoutube} from "react-icons/bs"
 // import footer from "../../assets/image/footerimage.png"
 import footer from '../../assets/image/dreamer.png'
 const Footer = () => {
@@ -76,13 +77,19 @@ const Footer = () => {
                 <h6>Social media</h6>
                 <div className="footer_icons">
                   <a href="https://www.facebook.com/dreamcottageltd">
-                    <FaFacebook classNameName="icon"></FaFacebook>
+                    <FaFacebook className="icon"></FaFacebook>
                   </a>
                   <a href="mailto:dreamerpropertiesltd@gmail.com">
-                    <FaEnvelope classNameName="icon"></FaEnvelope>
+                    <FaEnvelope className="icon"></FaEnvelope>
                   </a>
                   <a href="tel:01922-090882">
-                    <FaPhoneAlt classNameName="icon"></FaPhoneAlt>
+                    <FaPhoneAlt className="icon"></FaPhoneAlt>
+                  </a>
+                  <a href="/">
+                    <BsInstagram className="icon" />
+                  </a>
+                  <a href="/" target='_blank'>
+                    <BsYoutube className="icon" size={21} />
                   </a>
                 </div>
               </div>
