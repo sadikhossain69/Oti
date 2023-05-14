@@ -103,7 +103,7 @@ const Navbar = () => {
                   <a href="/">
                     <BsInstagram className="icon" />
                   </a>
-                  <a href="/" target='_blank'>
+                  <a href="https://www.youtube.com/@dreamerpropertiesltd." target='_blank'>
                     <BsYoutube className="icon" size={21} />
                   </a>
                 </div>
