@@ -91,7 +91,7 @@ const Navbar = () => {
               {
                 width < 769 &&
                 <div className="footer_icons">
-                  <a href="https://www.facebook.com/dreamcottageltd">
+                  <a href="https://www.facebook.com/dreamcottageltd" target={'_blank'}>
                     <FaFacebook className="icon"></FaFacebook>
                   </a>
                   <a href="mailto:dreamerpropertiesltd@gmail.com">
