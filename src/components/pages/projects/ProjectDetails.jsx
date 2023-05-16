@@ -6,7 +6,7 @@ import location_icon from "../../../assets/svg/flat1.svg"
 import bed from "../../../assets/svg/flat2.svg";
 import garage from "../../../assets/svg/flat5.svg";
 import baseURL from '../../../utils/baseURL';
-import { FaChessBoard } from 'react-icons/fa';
+import { FaChessBoard, FaMapMarkedAlt } from 'react-icons/fa';
 import { BiArea, BiUnite } from 'react-icons/bi'
 import { GiUndergroundCave } from 'react-icons/gi'
 import { SiSalesforce } from 'react-icons/si';
@@ -63,6 +63,13 @@ const ProjectDetails = () => {
                                     <img className='project_details_icons' src={location_icon} alt="" />
                                     <p>{singlePropertyData.location}</p>
                                 </div>
+                                <div class="d-flex product_Items1 product_item2">
+                                    <FaMapMarkedAlt 
+                                    size={26}
+                                    className='project_details_icons' />
+                                    <a href={singlePropertyData?.loc_url} target={'_blank'}>View in Google Maps</a>
+                                    {/* <p>{singlePropertyData?.loc_url}</p> */}
+                                </div>
                                 <div class="product_item2 d-flex ">
                                     <div class="product_2sitem">
                                         <img className='project_details_icons' src={storeysLogo} alt="" />
@@ -95,7 +102,7 @@ const ProjectDetails = () => {
                                 </div>
                                 <div class="product_last">
                                     <SiSalesforce
-                                    className='project_details_icons' />
+                                        className='project_details_icons' />
                                     <span>{singlePropertyData.sales} Sales</span>
                                 </div>
                                 <div class="product_btn">
