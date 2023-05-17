@@ -14,6 +14,23 @@ import storeysLogo from '../../../assets/svg/storeys.svg'
 
 const ProjectDetails = () => {
 
+    const [isMagnifierActive, setIsMagnifierActive] = useState(false);
+    const [magnifierPosition, setMagnifierPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseEnter = (event) => {
+        setIsMagnifierActive(true);
+        setMagnifierPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    const handleMouseLeave = () => {
+        setIsMagnifierActive(false);
+    };
+
+    const handleMouseMove = (event) => {
+        setMagnifierPosition({ x: event.clientX, y: event.clientY });
+    };
+
+
     const { id } = useParams()
     const [singlePropertyData, setSinglePropertyData] = useState({})
 
@@ -35,7 +52,7 @@ const ProjectDetails = () => {
         speed: 4000,
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 5000,
         slidesToScroll: 1,
     };
 
@@ -49,7 +66,21 @@ const ProjectDetails = () => {
                                 {
                                     singlePropertyData.properties?.map(e => <>
                                         <div class="product_left" key={e._id}>
-                                            <img src={e} alt="" srcset="" />
+                                            <div
+                                                className="image-container"
+                                                onMouseEnter={handleMouseEnter}
+                                                onMouseLeave={handleMouseLeave}
+                                                onMouseMove={handleMouseMove}
+                                            >
+                                                <img src={e} alt="" />
+
+
+                                            </div>
+                                            {isMagnifierActive && (
+                                                <div className="magnifier" style={{ left: magnifierPosition.x, top: magnifierPosition.y }}>
+                                                    <img src={e} alt="" />
+                                                </div>
+                                            )}
                                         </div>
                                     </>)
                                 }
@@ -64,9 +95,9 @@ const ProjectDetails = () => {
                                     <p>{singlePropertyData.location}</p>
                                 </div>
                                 <div class="d-flex product_Items1 product_item2">
-                                    <FaMapMarkedAlt 
-                                    size={26}
-                                    className='project_details_icons' />
+                                    <FaMapMarkedAlt
+                                        size={26}
+                                        className='project_details_icons' />
                                     <a href={singlePropertyData?.loc_url} target={'_blank'}>View in Google Maps</a>
                                     {/* <p>{singlePropertyData?.loc_url}</p> */}
                                 </div>
