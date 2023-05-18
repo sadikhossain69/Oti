@@ -11,6 +11,8 @@ import { BiArea, BiUnite } from 'react-icons/bi'
 import { GiUndergroundCave } from 'react-icons/gi'
 import { SiSalesforce } from 'react-icons/si';
 import storeysLogo from '../../../assets/svg/storeys.svg'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const ProjectDetails = () => {
 
@@ -47,7 +49,7 @@ const ProjectDetails = () => {
 
     const settings = {
         dots: true,
-        fade: true,
+        // fade: true,
         infinite: true,
         speed: 4000,
         slidesToShow: 1,
@@ -64,25 +66,19 @@ const ProjectDetails = () => {
                         <div class="col-lg-4 col-md-5">
                             <Slider {...settings}>
                                 {
-                                    singlePropertyData.properties?.map(e => <>
-                                        <div class="product_left" key={e._id}>
-                                            <div
-                                                className="image-container"
-                                                onMouseEnter={handleMouseEnter}
-                                                onMouseLeave={handleMouseLeave}
-                                                onMouseMove={handleMouseMove}
-                                            >
-                                                <img src={e} alt="" />
-
-
-                                            </div>
-                                            {isMagnifierActive && (
-                                                <div className="magnifier" style={{ left: magnifierPosition.x, top: magnifierPosition.y }}>
-                                                    <img src={e} alt="" />
+                                    singlePropertyData.properties?.map(e => {
+                                        return (
+                                            typeof (e) === 'string' &&
+                                            <>
+                                                <div class="product_left" key={e?._id}>
+                                                    <Zoom>
+                                                        <img src={e} alt="" />
+                                                    </Zoom>
                                                 </div>
-                                            )}
-                                        </div>
-                                    </>)
+                                            </>
+                                        )
+                                    }
+                                    )
                                 }
                             </Slider>
                         </div>
