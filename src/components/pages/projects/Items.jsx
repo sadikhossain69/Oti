@@ -20,7 +20,7 @@ const Items = ({projectItems}) => {
       projectItems.map((projectItem)=>{
         const { _id, properties, units, parking, storeys, floor, location, category, construction,beds, baths, area, carparking, address} = projectItem;
         return (
-          <div className="col-lg-4 col-md-4 mars_right" data-aos="fade-up">
+          <div className="col-lg-4 col-md-6 mars_right" data-aos="fade-up">
             <div className="flat_item" key={_id}>
               <div className="flat_img">
                 <img src={properties?.[0]} alt="" srcset="" />
