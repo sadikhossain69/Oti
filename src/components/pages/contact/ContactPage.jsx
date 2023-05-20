@@ -2,7 +2,7 @@ import React from 'react';
 import contactImg from '../../../assets/image/abdur.png'
 import './contactPage.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import {AiFillMail} from 'react-icons/ai'
+import { AiFillMail } from 'react-icons/ai'
 import { useForm } from 'react-hook-form';
 
 const ContactPage = () => {
@@ -32,7 +32,7 @@ const ContactPage = () => {
                     <div className='contact_left_contact_details'>
                         {/* icon */}
                         <div>
-                            <AiFillMail size={20} color='blue'/>
+                            <AiFillMail size={20} color='blue' />
                         </div>
                         {/* details */}
                         <div className='contact_left_text'>
@@ -45,19 +45,120 @@ const ContactPage = () => {
                     <form onSubmit={handleSubmit(contactSubmit)} action="">
                         <div className="contact_input">
                             <label htmlFor="">Name</label>
-                            <input type="text" />
+                            <input {
+                                ...register("name", {
+                                    required: {
+                                        value: true,
+                                        message: "Name is Required"
+                                    },
+                                    minLength: {
+                                        value: 3,
+                                        message: 'Name must be at least 3 characters',
+                                    },
+                                })
+                            } type="text" required/>
+                            {
+                                errors.name?.type === "required"
+                                &&
+                                <p className='fw-bold text-danger'>
+                                    {errors.name.message}
+                                </p>
+                            }
+                            {
+                                errors.name?.type === "minLength"
+                                &&
+                                <p className='fw-bold text-danger'>
+                                    {errors.name.message}
+                                </p>
+                            }
                         </div>
                         <div className="contact_input">
                             <label htmlFor="">Email</label>
-                            <input type="text" />
+                            <input {
+                                ...register("email", {
+                                    required: {
+                                        value: true,
+                                        message: "email is Required"
+                                    },
+                                    pattern: {
+                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                        message: 'Invalid email address',
+                                    }
+                                })
+                            } type="text" required />
+                            {errors.email?.type === 'required' && (
+                                <p className="fw-bold text-danger">
+                                    {errors.email.message}
+                                </p>
+                            )}
+                            {errors.email?.type === 'pattern' && (
+                                <p className="fw-bold text-danger">
+                                    {errors.email.message}
+                                </p>
+                            )}
                         </div>
                         <div className="contact_input">
                             <label htmlFor="">Number</label>
-                            <input type="text" />
+                            <input {
+                                ...register("number", {
+                                    required: {
+                                        value: true,
+                                        message: "Number is Required"
+                                    },
+                                    minLength: {
+                                        value: 11,
+                                        message: 'Number must be at least 11 characters',
+                                    },
+                                    pattern: {
+                                        value: /^(\+?880|0)1[3-9]\d{8}$/,
+                                        message: "Your number is not correct"
+                                    }
+                                })
+                            } type="number" required />
+                            {errors.number?.type === 'required' && (
+                                <p className="fw-bold text-danger">
+                                    {errors.number.message}
+                                </p>
+                            )}
+                            {errors.number?.type === 'minLength' && (
+                                <p className="fw-bold text-danger">
+                                    {errors.number.message}
+                                </p>
+                            )}
+                            {errors.number?.type === 'pattern' && (
+                                <p className="fw-bold text-danger">
+                                    {errors.number.message}
+                                </p>
+                            )}
                         </div>
                         <div className="contact_input">
                             <label htmlFor="">Description</label>
-                            <input type="text" />
+                            <input {
+                                ...register("message", {
+                                    required: {
+                                        value: true,
+                                        message: "Description is Required"
+                                    },
+                                    minLength: {
+                                        value: 3,
+                                        message: 'Description must be at least 3 characters',
+                                    },
+                                })
+                            } type="text" />
+                            {
+                                errors.message?.type === "required"
+                                &&
+                                <p className='fw-bold text-danger'>
+                                    {errors.message.message}
+                                </p>
+                            }
+                            {
+                                errors.message?.type === "minLength"
+                                &&
+                                <p className='fw-bold text-danger'>
+                                    {errors.message.message}
+                                </p>
+                            }
                         </div>
                         <input className='submit' type="submit" value={'Get A Quote'} />
                     </form>
