@@ -4,18 +4,35 @@ import './contactPage.css'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { AiFillMail } from 'react-icons/ai'
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'react-hot-toast';
 
 const ContactPage = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
 
     const contactSubmit = data => {
+        const contactData = {
+            name: data.name,
+            message: data.message,
+            number: data.number,
+            email: data.email
+        }
         console.log(data)
+        emailjs.send('service_kwm6cuf', 'template_6xs2rba', contactData).then(res => {
+            toast.success("Email Sent Successful")
+            console.log(res)
+            reset()
+        }, err => {
+            toast.error("Email Sent Failed")
+            reset()
+        })
     }
 
     return (
         <section id='Contact_section'>
             <div className="container contact_section">
+                <Toaster />
                 <div className='contact_left'>
                     <img src={contactImg} alt="" />
                     <div className='contact_left_contact_details'>
@@ -56,7 +73,7 @@ const ContactPage = () => {
                                         message: 'Name must be at least 3 characters',
                                     },
                                 })
-                            } type="text" required/>
+                            } type="text" required />
                             {
                                 errors.name?.type === "required"
                                 &&
