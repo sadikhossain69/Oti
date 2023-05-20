@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = axios.create({
-    baseURL: "http://localhost:8000/api/v1"
+    baseURL: "https://backend.dplgroupbd.com/api/v1"
 })
 
 export default baseURL;

@@ -15,6 +15,7 @@ const ProjectPage = () => {
   const getPropertyData = async () => {
     const { data } = await baseURL('/property/list')
     setPropertyData(data.data)
+    return data.data
   }
 
   useEffect(() => {
@@ -43,7 +44,7 @@ const ProjectPage = () => {
   }
   return (
     <section className="projects" id="projects">
-      <h2 className="section_title text-center">Our Ongoing Projects</h2>
+      <h2 className="section_title text-center">Our Projects</h2>
       <p className="section_subtitle text-center">Choose the best option</p>
       <List setClickButton={setClickButton} list={allNavList} filterItems={filterItems} />
 

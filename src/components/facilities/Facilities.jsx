@@ -29,7 +29,7 @@ const Facilities = () => {
                                     <h5>Satisfaction</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Smart life with smart life </p>
+                                    <p>Assure client satisfaction</p>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Facilities = () => {
                                     <h5>Smart Home</h5>
                                 </div>
                                 <div className="card_bottom">
-                                    <p>Assure client satisfaction </p>
+                                    <p>Smart life with smart life</p>
                                 </div>
                             </div>
                         </div>

@@ -11,11 +11,12 @@ const Counter = () => {
   const getCounterData = async () => {
     const { data } = await baseURL('/client/list')
     setCounterData(data.data)
+    return data.data
   }
 
   useEffect(() => {
     getCounterData()
-  })
+  }, [])
 
   return (
     <section id="learning_builder">
