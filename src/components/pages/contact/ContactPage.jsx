@@ -19,7 +19,7 @@ const ContactPage = () => {
             email: data.email
         }
         console.log(data)
-        emailjs.send('service_kwm6cuf', 'template_6xs2rba', contactData).then(res => {
+        emailjs.send('service_kwm6cuf', 'template_6xs2rba', contactData, '0tEH0AfgwZh8JfTLh').then(res => {
             toast.success("Email Sent Successful")
             console.log(res)
             reset()
