@@ -85,9 +85,6 @@ const Footer = () => {
                   <a href="tel:01922-090882">
                     <FaPhoneAlt className="icon"></FaPhoneAlt>
                   </a>
-                  <a href="/">
-                    <BsInstagram className="icon" />
-                  </a>
                   <a href="https://www.youtube.com/@dreamerpropertiesltd." target='_blank'>
                     <BsYoutube className="icon" size={21} />
                   </a>

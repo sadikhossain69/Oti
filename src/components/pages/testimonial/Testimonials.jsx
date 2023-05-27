@@ -71,11 +71,11 @@ const Testimonials = () => {
                               {/* <h6>{pos}</h6> */}
                               <p>{description}</p>
                               <div class="start_icon">
-                                <FaStar color='yellow'></FaStar>
-                                <FaStar color='yellow'></FaStar>
-                                <FaStar color='yellow'></FaStar>
-                                <FaStar color='yellow'></FaStar>
-                                <FaStar color='yellow'></FaStar>
+                                <FaStar color='black'></FaStar>
+                                <FaStar color='black'></FaStar>
+                                <FaStar color='black'></FaStar>
+                                <FaStar color='black'></FaStar>
+                                <FaStar color='black'></FaStar>
                               </div>
                             </div>
                           </div>

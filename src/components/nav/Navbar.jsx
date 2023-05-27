@@ -90,7 +90,7 @@ const Navbar = () => {
               </li>
               {
                 width < 769 &&
-                <div className="footer_icons">
+                <div className="footer_icons footer_icons_navbar d-flex flex-column justify-content-center align-items-center ">
                   <a href="https://www.facebook.com/dreamcottageltd" target={'_blank'}>
                     <FaFacebook className="icon"></FaFacebook>
                   </a>
@@ -99,9 +99,6 @@ const Navbar = () => {
                   </a>
                   <a href="tel:01922-090882">
                     <FaPhoneAlt className="icon"></FaPhoneAlt>
-                  </a>
-                  <a href="/">
-                    <BsInstagram className="icon" />
                   </a>
                   <a href="https://www.youtube.com/@dreamerpropertiesltd." target='_blank'>
                     <BsYoutube className="icon" size={21} />
