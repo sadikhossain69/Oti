@@ -34,7 +34,7 @@ const ContactPage = () => {
             <div className="container contact_section">
                 <Toaster />
                 <div className='contact_left'>
-                    <img src={contactImg} alt="" />
+                    <img src={"contactImage.png"} alt="" />
                     <div className='contact_left_contact_details'>
                         {/* icon */}
                         <div>
