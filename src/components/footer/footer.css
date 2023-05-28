@@ -1,7 +1,11 @@
 #footer_part{
     background:#90CCE5;
-    padding:100px 0 80px 0;
+    padding:100px 0 20px 0;
     color:var(--primary-color);
+}
+
+.font-size p {
+    font-size: 15px ;
 }
 
 .footer_one p{

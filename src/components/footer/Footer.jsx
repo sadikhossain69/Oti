@@ -8,7 +8,7 @@ import {
   FaMapMarkedAlt,
 } from "react-icons/fa";
 import { SiWhatsapp } from 'react-icons/si'
-import {BsInstagram, BsYoutube} from "react-icons/bs"
+import { BsInstagram, BsYoutube } from "react-icons/bs"
 // import footer from "../../assets/image/footerimage.png"
 import footer from '../../assets/image/dreamer.png'
 const Footer = () => {
@@ -96,6 +96,11 @@ const Footer = () => {
             <SiWhatsapp className='whatsapp_icon' size={58} />
           </a>
         </div>
+        <span className='text-center font-size'>
+          <p>
+            Developed & All Rights Reserver to - <a className='fw-bold' href="https://www.prismtechbd.com/" target='_blank' rel="noreferrer">Prism Tech BD</a>
+          </p>
+        </span>
       </section>
     </div>
   );
