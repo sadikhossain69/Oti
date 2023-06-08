@@ -98,7 +98,8 @@ const Footer = () => {
         </div>
         <span className='text-center font-size'>
           <p>
-            Developed & All Rights Reserver to - <a className='fw-bold' href="https://www.prismtechbd.com/" target='_blank' rel="noreferrer">Prism Tech BD</a>
+            Copyright © 2023 - <a className='fw-bold' href="https://www.prismtechbd.com/" target='_blank' rel="noreferrer">Prism Tech BD. </a>
+            All Rights Reserved.
           </p>
         </span>
       </section>
