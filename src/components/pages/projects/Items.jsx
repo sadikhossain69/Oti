@@ -57,7 +57,7 @@ const Items = ({projectItems}) => {
                   </p>
                 </div>
                 <div className="see_more">
-                  <Link to={`/products/${_id}`}>See More</Link>
+                  <Link to={`/properties/${_id}`}>See More</Link>
                 </div>
               </div>
             </div>
