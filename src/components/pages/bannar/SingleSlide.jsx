@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SingleSlide = ({ signleSlide }) => {
+const SingleSlide = ({ signleSlide, activeBanner }) => {
 
     const { title, description, banner, _id } = signleSlide
 
     return (
         <>
-            <div className={`carousel-item active`}>
+            <div className={`carousel-item ${activeBanner}`}>
                 <section
                     id="banner_part" >
                     <img className='banner_bg_img' src={banner} alt="" />

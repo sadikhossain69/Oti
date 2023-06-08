@@ -92,13 +92,13 @@ const Navbar = () => {
                 width < 769 &&
                 <div className="footer_icons footer_icons_navbar d-flex flex-column justify-content-center align-items-center ">
                   <a href="https://www.facebook.com/dreamcottageltd" target={'_blank'}>
-                    <FaFacebook className="icon"></FaFacebook>
+                    <FaFacebook className="icon" size={21}></FaFacebook>
                   </a>
                   <a href="mailto:dreamerpropertiesltd@gmail.com">
-                    <FaEnvelope className="icon"></FaEnvelope>
+                    <FaEnvelope className="icon" size={21}></FaEnvelope>
                   </a>
                   <a href="tel:01922-090882">
-                    <FaPhoneAlt className="icon"></FaPhoneAlt>
+                    <FaPhoneAlt className="icon" size={21}></FaPhoneAlt>
                   </a>
                   <a href="https://www.youtube.com/@dreamerpropertiesltd." target='_blank'>
                     <BsYoutube className="icon" size={21} />
