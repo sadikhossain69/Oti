@@ -69,7 +69,7 @@ const Testimonials = () => {
                             <div class="abdur_right">
                               <h5 className='font-weight-bold'>{name}</h5>
                               {/* <h6>{pos}</h6> */}
-                              <p>{description}</p>
+                              <p className='testimonial_text'>{description}</p>
                               <div class="start_icon">
                                 <FaStar color='black'></FaStar>
                                 <FaStar color='black'></FaStar>

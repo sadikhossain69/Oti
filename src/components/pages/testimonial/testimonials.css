@@ -76,6 +76,8 @@ div.swiper-pagination{
     background-color: var(--primary-color)!important;
 }
 
+
+
 @media(min-width:992px) and (max-width:1199.98px){
    #abdur_part {
         margin: 100px 0 0 0;
@@ -150,7 +152,7 @@ div.swiper-pagination{
         margin-bottom: 30px;
     }
     .abdur_right p {
-        font-size: 15px;
+        font-size: 12px;
         width: 100%;
         margin-bottom: 15px;
     }
