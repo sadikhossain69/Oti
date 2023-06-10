@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -13,28 +13,39 @@ import 'aos/dist/aos.css'
 import ProjectPage from "./components/pages/projects/ProjectPage";
 import ProjectDetails from "./components/pages/projects/ProjectDetails";
 import ContactPage from "./components/pages/contact/ContactPage";
+import Loader from "./utils/Loader";
 // import FacebookMessengerChat from "./utils/FacebookMassengerChat";
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, [5000]);
     Aos.init({ duration: 2000, offset: 100 });
   }, [])
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<Aboutpage />} />
+      {
+        loading ? <Loader /> :
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/about" element={<Aboutpage />} />
 
-          <Route path="/properties" element={<ProjectPage />} />
-          <Route path="/properties/:id" element={<ProjectDetails />} />
+              <Route path="/properties" element={<ProjectPage />} />
+              <Route path="/properties/:id" element={<ProjectDetails />} />
 
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-        {/* <FacebookMessengerChat /> */}
-        <Footer />
-      </BrowserRouter>
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+            {/* <FacebookMessengerChat /> */}
+            <Footer />
+          </BrowserRouter>
+      }
     </>
   );
 }
