@@ -10,6 +10,7 @@ import { FaChessBoard, FaMapMarkedAlt } from 'react-icons/fa';
 import { BiArea, BiUnite } from 'react-icons/bi'
 import { GiUndergroundCave } from 'react-icons/gi'
 import { SiSalesforce } from 'react-icons/si';
+import {IoTabletLandscapeOutline} from 'react-icons/io5'
 import storeysLogo from '../../../assets/svg/storeys.svg'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -121,6 +122,10 @@ const ProjectDetails = () => {
                                     <div class="product_2sitem product_middle">
                                         <GiUndergroundCave className="project_details_icons" />
                                         <span>{singlePropertyData.basement?.toString()}</span>
+                                    </div>
+                                    <div class="product_2sitem product_middle">
+                                        <IoTabletLandscapeOutline size={20} className="project_details_icons" />
+                                        <span>{singlePropertyData?.land_area}</span>
                                     </div>
                                     <div class="product_2item">
                                         <img className='project_details_icons' src={garage} alt="" />
