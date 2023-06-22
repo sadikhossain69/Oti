@@ -18,34 +18,26 @@ import Loader from "./utils/Loader";
 
 function App() {
 
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, [5000]);
     Aos.init({ duration: 2000, offset: 100 });
   }, [])
   return (
     <>
-      {
-        loading ? <Loader /> :
-          <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/about" element={<Aboutpage />} />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<Aboutpage />} />
 
-              <Route path="/properties" element={<ProjectPage />} />
-              <Route path="/properties/:id" element={<ProjectDetails />} />
+          <Route path="/properties" element={<ProjectPage />} />
+          <Route path="/properties/:id" element={<ProjectDetails />} />
 
-              <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-            {/* <FacebookMessengerChat /> */}
-            <Footer />
-          </BrowserRouter>
-      }
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        {/* <FacebookMessengerChat /> */}
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
